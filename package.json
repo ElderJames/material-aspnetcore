@@ -19,7 +19,8 @@
     "webdriver-update": "bash ./node_modules/.bin/webdriver-manager update",
     "test": "ng test --code-coverage --single-run",
     "test:watch": "ng test --code-coverage",
-    "ghpages-deploy": "ng build --base-href /covalent-quickstart/ --aot -prod --sourcemap=false && bash scripts/ghpages-deploy"
+    "ghpages-deploy": "ng build --base-href /covalent-quickstart/ --aot -prod --sourcemap=false && bash scripts/ghpages-deploy",
+    "build":"ng build --prod --output-path=wwwroot --output-hashing none"
   },
   "engines": {
     "node": ">4.4 < 7",

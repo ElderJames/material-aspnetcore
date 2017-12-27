@@ -25,12 +25,12 @@ module.exports = function (config) {
       clearContext: false // leave Jasmine Spec Runner output visible in browser
     },
     files: [
-      { pattern: './src/test.ts', watched: false },
+      { pattern: './ClientApp/test.ts', watched: false },
       { pattern: './node_modules/hammerjs/hammer.min.js'},
       { pattern: './node_modules/@angular/material/prebuilt-themes/indigo-pink.css', included: true, watched: true },
     ],
     preprocessors: {
-      './src/test.ts': ['@angular/cli']
+      './ClientApp/test.ts': ['@angular/cli']
     },
     mime: {
       'text/x-typescript': ['ts','tsx']
